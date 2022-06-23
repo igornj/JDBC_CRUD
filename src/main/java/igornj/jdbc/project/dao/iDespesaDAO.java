@@ -9,7 +9,7 @@ import java.util.Optional;
 public interface iDespesaDAO {
 
     Despesa save(Despesa despesa);
-    Despesa update(Despesa despesa);
+    void update(Despesa despesa);
     void delete(Long id);
     List<Despesa> findAll();
     Optional<Despesa> findById(Long id); //The optional type is used here because we can pass an ID that might not exist.
